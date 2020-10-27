@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  desktop:
+    build:
+      context: ./desktop
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      DISPLAY: ":0"
+    depends_on:
+      - java
+
+  java:
+    build:
+      context: ./java
