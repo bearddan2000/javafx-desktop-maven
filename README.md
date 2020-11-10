@@ -18,10 +18,13 @@ javafx application running inside a docker container.
 - openjdk:11-jdk
 
 ## To run
-```xhost +localhost && sudo ./install.sh -u```
+```xhost + && sudo ./install.sh -u```
 
-## To stop (optional)
+## To stop
 ```xhost && sudo ./install.sh -d```
+
+## To see help
+`sudo ./install.sh -h`
 
 ## Credits
 https://stackoverflow.com/questions/52144931/how-to-add-javafx-runtime-to-eclipse-in-java-11
